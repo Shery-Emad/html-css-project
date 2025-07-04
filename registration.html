@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration For online courses</title>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: #4a148c;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    body {
+      background-image: url('https://i.pinimg.com/736x/19/f9/78/19f978e2a75cfd148da81cfff5dee62c.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form {
+      background-color: rgba(135, 124, 206, 0.048);
+      width: 500px;
+      border: 10px solid rgb(62, 31, 139);
+      border-radius: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    form input, form select, form textarea {
+      padding: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    form div {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #button input {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      background-color: #4a148c;
+      color: white;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    #button input:hover {
+      background-color: rgb(138, 99, 173);
+      color: #4a148c;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="Thank You.html" method="post">
+    <h1>Registration Page</h1>
+
+    <div>
+      <label><b>🆔 National ID</b></label>
+      <input type="text" pattern="\d{14}" title="14 digits required" required>
+    </div>
+
+    <div>
+      <label><b>👤 First Name</b></label>
+      <input type="text" required pattern="[A-Za-z]+" title="Letters only">
+    </div>
+
+    <div>
+      <label><b>👤 Last Name</b></label>
+      <input type="text" required pattern="[A-Za-z]+" title="Letters only">
+    </div>
+
+    <div>
+      <label><b>📧 Email</b></label>
+      <input type="email" required pattern=".+@gmail\.com" title="Only Gmail is allowed" placeholder="@gmail.com">
+    </div>
+
+    <div>
+      <label><b>🔢 Age</b></label>
+      <input type="number" required min="1" title="Must be a positive number">
+    </div>
+
+    <div>
+      <label><b>🔒 Password</b></label>
+      <input type="password" id="password" minlength="6" required>
+    </div>
+
+    <div>
+      <label><b>🔒 Repeat Password</b></label>
+      <input type="password" id="confirmPassword" minlength="6" required>
+      <span class="error" id="errorMsg"></span>
+    </div>
+
+    <div>
+      <b>🚻 Gender</b>
+      <input type="radio" name="gender" value="male"><label><b>Male</b></label>
+      <input type="radio" name="gender" value="female"><label><b>Female</b></label>
+    </div>
+
+    <div>
+      <label><b>👨‍🎓 Faculty</b></label>
+      <select name="faculty">
+        <option value="cs" selected>Computer Science</option>
+        <option value="eng">Engineering</option>
+      </select>
+    </div>
+
+    <div>
+      <label><b>🗓️ Birthday Date</b></label>
+      <input type="date">
+    </div>
+
+    <div>
+      <label><b>📸 Upload User Picture</b></label>
+      <input type="file" accept="image/*">
+    </div>
+
+    <fieldset>
+      <legend><b>🧠 Select Your Skills</b></legend>
+      <div><input id="s1" type="checkbox" name="skills" value="html"><label>HTML</label></div>
+      <div><input id="s2" type="checkbox" name="skills" value="css"><label>CSS</label></div>
+      <div><input id="s3" type="checkbox" name="skills" value="js"><label>JS</label></div>
+    </fieldset>
+
+    <div>
+      <b>📝 About You</b><br>
+      <textarea name="about" rows="4" style="background-color: white;"></textarea>
+    </div>
+
+    <div id="button">
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear">
+    </div>
+  </form>
+
+ 
+</body>
+</html>
+
+
+
+  <!--<form action="home.html" method="post">
+    https://www.google.com/url?sa=i&url=https%3A%2F%2Fkharchoufa.com%2F%25D8%25A7%25D9%2584%25D8%25AA%25D8%25B3%25D9%2588%25D9%258A%25D9%2582-%25D8%25A7%25D9%2584%25D8%25B4%25D8%25AE%25D8%25B5%25D9%258A%2F&psig=AOvVaw3yWPBRaazTTZvM8ASxnA4i&ust=1751694598141000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDKp43Boo4DFQAAAAAdAAAAABAL  <h2 style="text-align: center;"><div style="display :flex;gap:20px "><p><a href=""target="_blank">home</a></p><p s><a href=""target="_blank">contact us</a></p><p><a href=""target="_blank">about</a></p></div></h2>  -->
